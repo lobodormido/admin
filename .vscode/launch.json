@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [   
+    {
+        "type": "chrome",
+        "request": "launch",
+        "name": "JS",
+        "url": "http://localhost:8888/proyectomuni/admin-noticias",
+        "webRoot": "${workspaceRoot}",
+        "sourceMaps": true,
+        "port": 9222
+    },
+    {
+        "name": "PHP",
+        "type": "php",
+        "request":"launch",
+        "port": 9000
+	},
+    {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Launch Chrome against localhost",
+        "url": "http://localhost:8888/proyectomuni/admin-noticias",
+        "webRoot": "${workspaceRoot}",
+        "sourceMaps": true,
+        "port": 9000
+    },
+    {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Attach to Chrome",
+        "port": 9000,
+        "webRoot": "${workspaceRoot}",
+        "sourceMaps": true,
+        "trace": true
+    }]
+}
