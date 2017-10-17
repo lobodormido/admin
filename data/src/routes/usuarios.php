@@ -97,7 +97,7 @@ $app->post('/usuarios', function(Request $request, Response $response) use ($db,
     $direccion  = $request->getParam('direccion');
     $ciudad     = $request->getParam('ciudad');
     $permisos   = 15;
-    $password   = $request->getParam('password');
+    $password   = hash("sha512", $request->getParam('password'));
     // $activo     = $request->getParam('activo');
     $activo     = 1;
 

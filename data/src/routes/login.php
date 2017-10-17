@@ -6,7 +6,7 @@ use \Psr\Http\Message\ResponseInterface as Response;
 $app->get('/login', function(Request $request, Response $response) use ($db)
 {
     $_user = $request->getParam('user');
-    $_pass = $request->getParam('pass');
+    $_pass = hash("sha512", $request->getParam('pass'));
 
     $sql = "SELECT id, username, nombre, mail, direccion, ciudad, permisos FROM usuarios WHERE activo = 1 AND username = :user AND password = :pass";
 

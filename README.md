@@ -26,6 +26,5 @@ Levantar info en la landing:
 - Inspeccionar si alguno de los lugares donde hay hardcodeada una URL puede esta ser cambiada por una dinámica.
 - Borrar archivos sin usar (que no estén registrados en la base de datos).
 - Elegir los permisos al crear usuario nuevo.
-- MD5 en passwords.
 
 <h5>Desarrollado integramente por el LAB IT de la Secretaria de Modernizacion de La Plata.</h5>
